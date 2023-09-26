@@ -29,6 +29,9 @@ def obtener_resultado(opcion_jugador, opcion_computadora):
     print(opcion_computadora)
     if opcion_jugador == opcion_computadora:
         return "Es un empate!"
+    else:
+        if (opcion_jugador == "piedra" and opcion_computadora == "tijeras") or (opcion_jugador == "papel" and opcion_computadora == "piedra") or (opcion_jugador == "tijeras" and opcion_computadora == "papel"):
+            return "El jugador ganó"           
     
     return "La computadora ganó"
 
