@@ -37,15 +37,17 @@ class Bird(Animal):
     def move(self):
         print(f"Bird {self.name} is flying")
 
-def interact_with_animal(animal:Animal):
-    animal.make_sound()
-    animal.move()
+class Visitor:
+    def interact_with_animal(self, animal:Animal):
+        animal.make_sound()
+        animal.move()
 
-def zoo_simulation(list_animals):
-    for animal in animals:
-        interact_with_animal(animal)
+    def zoo_simulation(self, list_animals):
+        for animal in animals:
+            self.interact_with_animal(animal)
 
 
 animals = [Lion("King"), Snake("Sam"), Bird("Sally")]
-zoo_simulation(animals)
+juan = Visitor()
+juan.zoo_simulation(animals)
 
