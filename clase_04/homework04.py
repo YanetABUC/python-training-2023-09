@@ -14,7 +14,7 @@ def exercise1():
     add_number = int(input("Enter another number: "))
     list_numbers.append(add_number)
     print(f"{add_number} was added to the list: {list_numbers}")
-    eliminated_number = list_numbers.pop(1)
+    eliminated_number = list_numbers.pop(2)
     print(f"{eliminated_number} was removed from the list: {list_numbers}")
     list_numbers[-1] = 100
     print(f"Last item of the list was modified: {list_numbers}")
@@ -33,7 +33,7 @@ def exercise2():
 
 #exercise2()
 
-#·xercise 3: Crea un diccionario con 3 pares clave-valor representando un libro (titulo, año, autor)
+#Exercise 3: Crea un diccionario con 3 pares clave-valor representando un libro (titulo, año, autor)
 #Añade el numero de paginas, moficiando el diccionario
 def exercise3(): 
     book_dict = {
