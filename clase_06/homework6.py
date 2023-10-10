@@ -7,7 +7,7 @@ class Animal:
         return self.__name
     
     @name.setter
-    def name(self, name):
+    def set_name(self, name):
         self.__name = name
 
     def make_sound(self):
@@ -43,7 +43,7 @@ class Visitor:
         animal.move()
 
     def zoo_simulation(self, list_animals):
-        for animal in animals:
+        for animal in list_animals:
             self.interact_with_animal(animal)
 
 
